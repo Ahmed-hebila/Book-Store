@@ -1,0 +1,46 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "book-store-sw2",
+          "appId": "1:870560201688:android:1caf68ada5d70aa3b450ad",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "book-store-sw2",
+          "configurations": {
+            "android": "1:870560201688:android:1caf68ada5d70aa3b450ad",
+            "ios": "1:870560201688:ios:6d1b9bb7119da06db450ad",
+            "macos": "1:870560201688:ios:6d1b9bb7119da06db450ad",
+            "web": "1:870560201688:web:0b3b0bb5b638599db450ad",
+            "windows": "1:870560201688:web:7f8dd445532830f4b450ad"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "site": "book-store-sw2",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "nam5",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
